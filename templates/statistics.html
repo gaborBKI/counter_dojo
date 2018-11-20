@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+</head>
+<body>
+    <h1> All requests:</h1>
+    <h2> {{ counts }} </h2>
+    <h1> Requests by type:</h1>
+    {%  for k, v in count.items() %}
+        <h2>{{  k }}: {{ v }}</h2>
+    {%  endfor %}
+</body>
+</html>
